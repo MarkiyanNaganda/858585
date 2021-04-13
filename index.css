@@ -1,6 +1,7 @@
 body
 {
 background-color: rgba(0, 250, 154, 0.37);
+
 }
 h1{
 color: rgb(63, 90, 59);
@@ -9,44 +10,40 @@ text-transform: uppercase;
 text-transform: uppercase;
 }
 /* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-}
-
-/* Style tab links */
-.tablink {
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
   background-color: #555;
-  color: white;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
   float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
+  text-align: center;
+  padding: 12px;
   color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
 
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
 
-
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
 
 
 
@@ -231,3 +228,25 @@ body {
         font-size: 13px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
